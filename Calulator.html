@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles(pt3).css"> 
+        <title>Calculator</title>    
+        
+    </head>
+
+    
+
+    <body onload="SumValueF1()">
+        <div class="navbar">
+            <a href="index.html">
+                HOME</a>
+            <a href="ErrorMessege.html">
+                Statistics</a>
+            <a href="Calulator.html">
+                Calculator</a>
+            <a href="Teamlist_folder/Teamlist.html">
+                Team List</a>
+        </div>
+        
+        <div id="form">
+        <section class="checkboxes">
+            <form id="sumForm">
+                <label>
+                    <input type="checkbox" name="value" value="32.0"> Max Vertappen (32)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="27.3"> Lando Norris (27.3)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="25.8"> Charles Leclerc (25.8)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="25.5"> Oscar Piastri (25.5)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="24.8"> Lewis Hamilton (24.8)
+                </label>
+
+
+                <br>
+                
+                
+                <label>
+                    <input type="checkbox" name="value" value="23.8"> Carlos Sainz (23.8)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="23.6"> Sergio Perez (23.6)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="22.6"> Geogre Russell (22.6)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="15.1"> Fernando Alsonso (15.1)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="14.8"> Estaban Ocon (14.8)
+                </label>
+
+
+                <br>
+
+
+                <label>
+                    <input type="checkbox" name="value" value="14.6"> Lance Stroll (14.6)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="13.4"> Kevin Magnussen (13.4)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="11.5"> Nico Hulkenberg (11.5)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="11.1"> Liam Lawson (11.1)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="11.0"> Pierre Gasly (11)
+                </label>
+
+
+                <br>
+
+
+                <label>
+                    <input type="checkbox" name="value" value="10.9"> Yuki Tsunoda (10.9)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="8.9"> Alexander Albon (8.9)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="8.7"> Zhou Guanyu (8.7)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="7.1"> Franco Colapinto (7.1)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="6.7"> Valtteri Bottas (6.7)
+                </label>
+                
+
+                <br>
+                <br>
+                <br>
+
+
+                <label>
+                    <input type="checkbox" name="value" value="29.6"> RedBull Racing (29.6)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="26.8"> McLaren (26.8)
+                </label>
+                
+                <br>
+                
+                <label>
+                    <input type="checkbox" name="value" value="25.1"> Ferrari (25.1)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="24.7"> Mercedes (24.7)
+                </label>
+                
+                <br>
+                
+                <label>
+                    <input type="checkbox" name="value" value="14.6"> Aston Martin (14.6)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="13.1"> RB (13.1)
+                </label>
+                
+                <br>
+                
+                <label>
+                    <input type="checkbox" name="value" value="12.4"> Alpine (12.4)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="11.8"> HAAS F1 Team (11.8)
+                </label>
+                
+                <br>
+                
+                <label>
+                    <input type="checkbox" name="value" value="7.1"> Kick Sauber (7.1)
+                </label>
+                <label>
+                    <input type="checkbox" name="value" value="6.5"> Williams (6.5)
+                </label>
+                
+                <br>
+                <button type="button" onclick="calculateSum()">Calculate Sum</button>
+                </form>
+            </div>
+        </section>
+
+        <p id="result"></p>
+        
+        <script>
+            
+
+            function calculateSum() {
+            
+                let output = "";
+                
+                var checkboxes = document.querySelectorAll('input[name="value"]:checked');
+                var sum = 0;
+
+                checkboxes.forEach(function(checkbox) {
+                    sum += parseFloat(checkbox.value);
+                });
+
+                document.getElementById('result').textContent = 'The Team Cost is: ' + parseFloat(sum).toFixed(1) + 'M';
+            }   
+        </script>
+
+
+
+
+
+
+    </body>
+
+
+</html>

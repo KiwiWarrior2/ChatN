@@ -1,0 +1,141 @@
+<!--
+This file is mainly for Clint-side Programming Activity 2
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--ALEX look into this and explain it--> <!--It take the title characters from URL and "translate it" into a kind of binary code-->
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0"> <!--The viewport asks is the main PAGE itself and with content you are assigning it how big it should be. Here its max size-->
+        <title>HTML basics</title>
+        <!-- Link to stylesheet here-->
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+
+    <body>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">E</a></p>
+        <h1>Page for testing HTML elements</h1>
+        
+        <p> <!--puting the text on different rows will not result in it getting a new line of its own-->
+            This page is used to test different HTML elements.
+            <br> was done in Clint-side Programming. <!--The <br> command is used to signal when you want to make a linebreak in a paragrath-->
+        </p>
+        
+        <h2>Lists</h2> <!--h2 is used to make a smaller header, it goes all the way down h1, h2, h3, h4, h5 and h6-->
+        
+        <p>In HTML, there are two types of Lists: </p>
+
+        <ul> <!--diffrent way to make list with ul with li or ol with li-->
+            <li>Bulleted (unnumbered list) </li>
+            <li>numbered Lists</li>
+        </ul>
+
+        <p>
+            The list above is unnumbered whereas the one below
+            is a numbered one.
+        </p>
+
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+
+        <!--This is how you make the tables-->
+        <!--You will have tr that stands for each table row and td stands for table coulm-->
+        <!--If you only add <table>, <tr> and <td> then you won't get any proper spacing for the webpage-->
+        <h2>Table type 1</h2>
+        <table> 
+            <tr>
+                <td>Technique</td>
+                <td>Notes</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Hypertext Markup Leaguage</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Cascading StyleSheets</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Offically ECMA script</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!--If you add for example a boarder you will get a boarder-->
+        <h2>Table type 2</h2>
+        <table border="1"> 
+            <tr>
+                <td>Technique</td>
+                <td>Notes</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Hypertext Markup Leaguage</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Cascading StyleSheets</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Offically ECMA script</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!--If you switch out td for th (table header) it will be bold font-->
+        <h2>Table type 3</h2>
+        <table> 
+            <tr>
+                <th>Technique</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <th>HTML</th>
+                <th>Hypertext Markup Leaguage</th>
+            </tr>
+            <tr>
+                <th>CSS</th>
+                <th>Cascading StyleSheets</th>
+            </tr>
+            <tr>
+                <th>JavaScript</th>
+                <th>Offically ECMA script</th>
+            </tr>
+        </table>
+
+
+        <!--When making a link you will need to make a attribut infront of the <a>-->
+        <h2>Links</h2>
+        <p>
+            Links can be to either another webpage or a file in the web:
+            <ul>
+                <li><a href="https://www.seamk.fi"><img  src="maxfrank.jpg" alt="Max Frank" width="1000" height="400"> SeAMKs Home Page (to the same page)</a></li> <!--When making a link you need to do <a href="[Link]">-->
+                <li><a href="https://www.seamk.fi" target="_blank">SeAMKs Home Page (opens a new tab)</a> </li> <!--If you want ex. open a new tab. Then you need to add a target-->
+                <li><a href="aboutstylesheets.html">About style sheets </a></li> <!--If you are intressted in how to make everything in a different style, click the link for explanations-->
+            </ul>
+        </p>
+
+
+        <h2>Images</h2> 
+        <!--you can create images with img src with src is source and it leading to an image link-->
+        <img  src="maxfrank.jpg" alt="Max Frank" width="1000" height="400">
+        <img src="Snapchat-2126117173.jpg" alt="Dr Mario" width="1000" height="1000">
+
+        <h2>Video</h2>
+        <p>a bit boring</p>
+        <video width="800" height="400" controls="1" autoplay muted>
+            <source src="Tampere_watershow.mp4">
+            your browser does not support the video tag.
+        </video>
+    </body>
+
+</html>
