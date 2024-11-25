@@ -150,3 +150,9 @@ footer {
     color: white;
     padding: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    .row, .navbar {  
+      flex-direction: column;
+    }
+  }
