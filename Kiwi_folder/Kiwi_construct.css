@@ -68,7 +68,7 @@ padding is included in thier dimensions
   
   .side {
     flex: 30%;
-    background-color:green;
+    background-color:limegreen;
     padding: 20px;
     color: white;
   }
