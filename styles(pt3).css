@@ -55,9 +55,8 @@ main {
     font-size: 18px;
     color: black;
     border-radius: 5px;
-    height: 400px;
-    width: 1000px;
-
+    height: auto;
+    width: auto;
 }
 
 
