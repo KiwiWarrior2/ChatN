@@ -1,0 +1,105 @@
+// Set the date and time of the next event
+
+
+    const _MelbourneTime = new Date ("2025-03-14T00:00:00").getTime();
+    const _ShanghaiTime = new Date ("2025-03-21T00:00:00").getTime();
+    const _SuzukaTime = new Date ("2025-04-4T00:00:00").getTime();
+    const _SakhirTime = new Date ("2025-04-11T00:00:00").getTime();
+    const _JeddahTime = new Date ("2025-04-18T00:00:00").getTime();
+    const _MiamiTime = new Date ("2025-05-02T00:00:00").getTime();
+    const _ImolaTime = new Date ("2025-05-16T00:00:00").getTime();
+    const _MonacoTime = new Date ("2025-05-23T00:00:00").getTime();
+    const _BarcelonaTime = new Date ("2025-05-30T00:00:00").getTime();
+    const _MontrealTime = new Date ("2025-06-13T00:00:00").getTime();
+    const _SpielbergTime = new Date ("2025-06-27T00:00:00").getTime();
+    const _SilverstoneTime = new Date ("2025-07-04T00:00:00").getTime();
+    const _SpaTime = new Date ("2025-07-25T00:00:00").getTime();
+    const _BudapestTime = new Date ("2025-08-01T00:00:00").getTime();
+    const _ZandvoortTime = new Date ("2025-08-29T00:00:00").getTime();
+    const _MonzaTime = new Date ("2025-09-05T00:00:00").getTime();
+    const _BakuTime = new Date ("2025-09-19T00:00:00").getTime();
+    const _SingaporeTime = new Date ("2025-10-03T00:00:00").getTime();
+    const _AustinTime = new Date ("2025-10-17T00:00:00").getTime();
+    const _MexicoCityTime = new Date ("2025-10-24T00:00:00").getTime();
+    const _SaoPauloTime = new Date ("2025-11-07T00:00:00").getTime();
+    const _LasVegasTime = new Date ("2025-11-20T00:00:00").getTime();
+    const _LusailTime = new Date ("2025-11-28T00:00:00").getTime();
+    const _YasMarinaTime = new Date ("2025-12-05T00:00:00").getTime();
+    const _CurrentTime = new Date().getTime();
+    let _RaceTime = new Date().getTime();
+ 
+    if (CurrentTime < _MelbourneTime){
+        _RaceTime = _MelbourneTime;}
+    else if (_CurrentTime < _ShanghaiTime){
+         _RaceTime = _ShanghaiTime;}
+    else if (_CurrentTime < _SuzukaTime){
+         _RaceTime = _SuzukaTime;}
+    else if (_CurrentTime < _SakhirTime){
+         _RaceTime = _SakhirTime;}
+    else if (_CurrentTime < _JeddahTime){
+         _RaceTime = _JeddahTime;}
+    else if (_CurrentTime < _MiamiTime){
+         _RaceTime = _MiamiTime;}
+    else if (_CurrentTime < _ImolaTime){
+         _RaceTime = _ImolaTime;}
+    else if (_CurrentTime < _MonacoTime){
+         _RaceTime = _MonacoTime;}
+    else if (_CurrentTime < _BarcelonaTime){
+         _RaceTime = _BarcelonaTime;}
+    else if (_CurrentTime < _MontrealTime){
+         _RaceTime = _MontrealTime;}
+    else if (_CurrentTime < _SpielbergTime){
+         _RaceTime = _SpielbergTime;}
+    else if (_CurrentTime < _SilverstoneTime){
+         _RaceTime = _SilverstoneTime;}
+    else if (_CurrentTime < _SpaTime){
+         _RaceTime = _SpaTime;}
+    else if (_CurrentTime < _BudapestTime){
+         _RaceTime = _BudapestTime;}
+    else if (_CurrentTime < _ZandvoortTime){
+         _RaceTime = _ZandvoortTime;}
+    else if (_CurrentTime < _MonzaTime){
+         _RaceTime = _MonzaTime;}
+    else if (_CurrentTime < _BakuTime){
+         _RaceTime = _BakuTime;}
+    else if (_CurrentTime < _SingaporeTime){
+         _RaceTime = _SingaporeTime;}
+    else if (_CurrentTime < _AustinTime){
+         _RaceTime = _AustinTime;}
+    else if (_CurrentTime < _MexicoCityTime){
+         _RaceTime = _MexicoCityTime;}
+    else if (_CurrentTime < _SaoPauloTime){
+         _RaceTime = _SaoPauloTime;}
+    else if (_CurrentTime < _LasVegasTime){
+         _RaceTime = _LasVegasTime;}
+    else if (_CurrentTime < _LusailTime){
+         _RaceTime = _LusailTime;}
+    else if (_CurrentTime < _YasMarinaTime){
+         _RaceTime = _YasMarinaTime;}
+    else{
+         _RaceTime = new Date("2025-12-31T23:59:59");}
+
+
+
+const eventDate = new Date("_RaceTime").getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const timeLeft = eventDate - now;
+
+  if (timeLeft > 0) {
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  } else {
+    document.getElementById("countdown").innerHTML = "The event has started!";
+    clearInterval(timerInterval);
+  }
+}
+
+// Update the countdown every second
+const timerInterval = setInterval(updateCountdown, 1000);

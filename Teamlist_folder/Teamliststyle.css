@@ -61,8 +61,8 @@
         }
 
         .team-card .team-logo {
-            width: 100px;
-            height: 100px;
+            width: 30%;
+            height: 30%;
             border: 2px solid white;
             border-radius: 1px;
             margin-right: 20px;
@@ -126,3 +126,10 @@
             color: white;
             padding: 10px;
         }
+
+
+        @media screen and (max-width: 800px) {
+            .row, .navbar {  
+              flex-direction: column;
+            }
+          }
