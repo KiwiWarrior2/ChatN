@@ -16,7 +16,7 @@ body {
 
 .navbar {
     display: flex;
-    background-color: #FF1E00;
+    background-color: green; /*#FF1E00*/
   }
   
   .navbar a {
