@@ -1,4 +1,3 @@
-// Define race dates as an array for easier management
 const raceDates = [
     new Date("2025-03-14T00:00:00").getTime(), // Melbourne
     new Date("2025-03-21T00:00:00").getTime(), // Shanghai
@@ -26,7 +25,7 @@ const raceDates = [
     new Date("2025-12-05T00:00:00").getTime(), // Yas Marina
   ];
   
-  // Find the next race date
+
   const currentTime = new Date().getTime();
   const nextRace = raceDates.find(raceTime => (raceTime + 259200000) > currentTime) || new Date("2025-12-31T23:59:59").getTime(); // Fallback
   
@@ -48,6 +47,5 @@ const raceDates = [
     }
   }
   
-  // Update the countdown every second
   const timerInterval = setInterval(updateCountdown, 1000);
   
