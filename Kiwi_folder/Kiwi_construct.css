@@ -16,7 +16,7 @@ padding is included in thier dimensions
   .header {
     padding: 60px;
     text-align: center;
-    background: white;
+    background: limegreen ;
     color: black;
   }
   
@@ -37,11 +37,11 @@ padding is included in thier dimensions
   /* Navigation */
   .navbar {
     display: flex;
-    background-color:mediumseagreen;
+    background-color:black;
   }
   
   .navbar a {
-    color: white;
+    color: lightgreen;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
@@ -68,9 +68,9 @@ padding is included in thier dimensions
   
   .side {
     flex: 30%;
-    background-color:darkgreen;
+    background-color:black;
     padding: 20px;
-    color: white;
+    color: lightgreen;
   }
   .column {
     float: left;
