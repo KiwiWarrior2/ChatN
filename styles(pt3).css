@@ -39,6 +39,11 @@ body {
     color: black;
   }
 
+.column {
+    float: left;
+    width: 20%;
+}
+
 /* Main content */
 main {
     display: flex;
@@ -58,7 +63,6 @@ main {
     height: auto;
     width: auto;
 }
-
 
 
 /* Team List Section */
@@ -141,6 +145,8 @@ main {
     color: white;
     font-size: 14px;
 }
+
+
 
 /* Footer */
 footer {
