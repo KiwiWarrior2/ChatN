@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles(pt3).css"> 
+        <link rel="stylesheet" href="CSS_Calculator.css"> 
         <title>Calculator</title>    
         
     </head>
@@ -25,171 +25,180 @@
         <h1>Team Building Calculator</h1>
 
         <div id="form">
-        <section class="checkboxes">
-            <form id="sumForm">
-                <label>
-                    <input type="checkbox" name="value" value="32.3"> Max Vertappen (32.3)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="27.5"> Lando Norris (27.5)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="26.1"> Charles Leclerc (26.1)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="25.7"> Oscar Piastri (25.7)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="25.8"> Lewis Hamilton (25.8)
-                </label>
-
-
-                <br>
-                
-                
-                <label>
-                    <input type="checkbox" name="value" value="24.4"> Carlos Sainz (24.4)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="23.2"> Sergio Perez (23.2)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="23.2"> Geogre Russell (23.2)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="15.3"> Fernando Alsonso (15.3)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="14.4"> Jack Doohan (14.4)
-                </label>
-
-
-                <br>
-
-
-                <label>
-                    <input type="checkbox" name="value" value="14.3"> Lance Stroll (14.3)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="14.3"> Kevin Magnussen (14.3)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="11.8"> Nico Hulkenberg (11.8)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="10.9"> Liam Lawson (10.9)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="11.8"> Pierre Gasly (11.8)
-                </label>
-
-
-                <br>
-
-
-                <label>
-                    <input type="checkbox" name="value" value="11.9"> Yuki Tsunoda (11.9)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="8.6"> Alexander Albon (8.6)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="9.6"> Zhou Guanyu (9.6)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="7.4"> Franco Colapinto (7.4)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="7.1"> Valtteri Bottas (7.1)
-                </label>
-                
-
-                <br>
-                <br>
-                <br>
-
-
-                <label>
-                    <input type="checkbox" name="value" value="29.7"> RedBull Racing (29.7)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="27.0"> McLaren (27)
-                </label>
-                
-                <br>
-                
-                <label>
-                    <input type="checkbox" name="value" value="25.3"> Ferrari (25.3)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="25.1"> Mercedes (25.1)
-                </label>
-                
-                <br>
-                
-                <label>
-                    <input type="checkbox" name="value" value="14.4"> Aston Martin (14.4)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="12.9"> RB (12.9)
-                </label>
-                
-                <br>
-                
-                <label>
-                    <input type="checkbox" name="value" value="12.1"> Alpine (12.1)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="12.2"> HAAS F1 Team (12.2)
-                </label>
-                
-                <br>
-                
-                <label>
-                    <input type="checkbox" name="value" value="7.5"> Kick Sauber (7.5)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="value" value="6.1"> Williams (6.1)
-                </label>
-                
-                <br>
-                <button type="button" onclick="calculateSum()">Calculate Sum</button><br>
-                <p id="result">The Team Cost is: 0M</p>
+            <section class="checkboxes">
+                <form id="sumForm">
+                    <div class="checkbox-grid">
+                    <!-- Drivers -->
+                        <div class="checkbox-container">
+                            <img src="Driver_number_folder/Drivers/Verstappen_1x1.jpg" class="checkbox-img" data-value="32.3" data-checked="false">
+                            <span class="checkbox-label">Max Verstappen (32.3)</span>
+                        </div>
+                        <div class="checkbox-container">
+                            <img src="Driver_number_folder/Drivers/Lando_1x1.jpg" class="checkbox-img" data-value="27.5" data-checked="false">
+                            <span class="checkbox-label">Lando Norris (27.5)</span>
+                        </div>
+                        <div class="checkbox-container">
+                            <img src="Driver_number_folder/Drivers/Leclerc_1x1.jpg" class="checkbox-img" data-value="26.1" data-checked="false">
+                            <span class="checkbox-label">Charles Leclerc (26.1)</span>
+                        </div>
+                        <div class="checkbox-container">
+                            <img src="Driver_number_folder/Drivers/Piastri_1x1.jpg" class="checkbox-img" data-value="25.7" data-checked="false">
+                            <span class="checkbox-label">Oscar Piastri (25.7)</span>
+                        </div>
+                        <div class="checkbox-container">
+                            <img src="Driver_number_folder/Drivers/Hamilton_1x1.jpg" class="checkbox-img" data-value="25.8" data-checked="false">
+                            <span class="checkbox-label">Lewis Hamilton (25.8)</span>
+                        </div>
+                        <div class="checkbox-container">
+                            <img src="Driver_number_folder/Drivers/Sainz_1x1.jpg" class="checkbox-img" data-value="24.4" data-checked="false">
+                            <span class="checkbox-label">Carlos Sainz (24.4)</span>
+                        </div>
+                        <div class="checkbox-container">
+                            <img src="Driver_number_folder/Drivers/Lawson_1x1.jpg" class="checkbox-img" data-value="23.2" data-checked="false">
+                            <span class="checkbox-label">Liam Lawson (23.2)</span>
+                        </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Russell_1x1.jpg" class="checkbox-img" data-value="23.2" data-checked="false">
+                        <span class="checkbox-label">George Russell (23.2)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Alonso_1x1.jpg" class="checkbox-img" data-value="15.3" data-checked="false">
+                        <span class="checkbox-label">Fernando Alonso (15.3)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Doohan_1x1.jpg" class="checkbox-img" data-value="14.4" data-checked="false">
+                        <span class="checkbox-label">Jack Doohan (14.4)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Stroll_1x1.jpg" class="checkbox-img" data-value="14.3" data-checked="false">
+                        <span class="checkbox-label">Lance Stroll (14.3)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Bearman_1x1.jpg" class="checkbox-img" data-value="14.3" data-checked="false">
+                        <span class="checkbox-label">Oliver Bearman (14.3)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Hulkenberg_1x1.jpg" class="checkbox-img" data-value="11.8" data-checked="false">
+                        <span class="checkbox-label">Nico Hülkenberg (11.8)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Hadjar_1x1.jpg" class="checkbox-img" data-value="10.9" data-checked="false">
+                        <span class="checkbox-label">Isack Hadjar (10.9)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Gasly_1x1.jpg" class="checkbox-img" data-value="11.8" data-checked="false">
+                        <span class="checkbox-label">Pierre Gasly (11.8)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Tsunoda_1x1.jpg" class="checkbox-img" data-value="11.9" data-checked="false">
+                        <span class="checkbox-label">Yuki Tsunoda (11.9)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Albon_1x1.jpg" class="checkbox-img" data-value="8.6" data-checked="false">
+                        <span class="checkbox-label">Alexander Albon (8.6)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Bortoleto_1x1.jpg" class="checkbox-img" data-value="9.6" data-checked="false">
+                        <span class="checkbox-label">Gabriel Bortoleto (9.6)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Antonelli_1x1.jpg" class="checkbox-img" data-value="7.4" data-checked="false">
+                        <span class="checkbox-label">Kimi Antonelli (7.4)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Drivers/Ocon_1x1.jpg" class="checkbox-img" data-value="7.1" data-checked="false">
+                        <span class="checkbox-label">Estaban Ocon (7.1)</span>
+                    </div>
+                </div>
+                    <br>
+                <div class="checkbox-grid">
+        
+                    <!-- Teams -->
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/Red_bull_logo_1x1.jpg" class="checkbox-img" data-value="29.7" data-checked="false">
+                        <span class="checkbox-label">Red Bull Racing (29.7)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/McLaren_logo_1x1.jpg" class="checkbox-img" data-value="27.0" data-checked="false">
+                        <span class="checkbox-label">McLaren (27.0)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/Ferrari_logo_1x1.jpg" class="checkbox-img" data-value="25.3" data-checked="false">
+                        <span class="checkbox-label">Ferrari (25.3)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/Mercedes_logo_1x1.jpg" class="checkbox-img" data-value="25.1" data-checked="false">
+                        <span class="checkbox-label">Mercedes (25.1)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/Aston_martin_logo_1x1.jpg" class="checkbox-img" data-value="14.4" data-checked="false">
+                        <span class="checkbox-label">Aston Martin (14.4)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/RB_logo_1x1.jpg" class="checkbox-img" data-value="12.9" data-checked="false">
+                        <span class="checkbox-label">RB (12.9)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/Alpine_logo_1x1.jpg" class="checkbox-img" data-value="12.1" data-checked="false">
+                        <span class="checkbox-label">Alpine (12.1)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/HAAS_logo_1x1.jpg" class="checkbox-img" data-value="12.2" data-checked="false">
+                        <span class="checkbox-label">Haas F1 Team (12.2)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/Sauber_logo_1x1.jpg" class="checkbox-img" data-value="7.5" data-checked="false">
+                        <span class="checkbox-label">Kick Sauber (7.5)</span>
+                    </div>
+                    <div class="checkbox-container">
+                        <img src="Driver_number_folder/Constructors/Williams_logo_1x1.jpg" class="checkbox-img" data-value="6.1" data-checked="false">
+                        <span class="checkbox-label">Williams (6.1)</span>
+                    </div>
+        
+                    <br>
+                </div>
+                <div class="checkbox-label"
+                    <p id="result">The Team Cost is: 0M</p>
                 </form>
-            
-             
-
-            </div>
-        </section>
+            </section>
+        </div>
 
        
         
         <script>
-            
+            let selectedValues = [];
+
+            function toggleCheckbox(img) {
+            // Get the parent container of the image (checkbox-container)
+            let container = img.closest('.checkbox-container');
+            let value = parseFloat(img.getAttribute("data-value"));
+            let isChecked = img.getAttribute("data-checked") === "true";
+
+            if (isChecked) {
+                img.setAttribute("data-checked", "false");
+                container.classList.remove("selected");  // Apply to container instead of image
+                selectedValues = selectedValues.filter(v => v !== value);
+            } else {
+                img.setAttribute("data-checked", "true");
+                container.classList.add("selected");  // Apply to container instead of image
+                selectedValues.push(value);
+            }
+
+            calculateSum();
+            }
+
 
             function calculateSum() {
-            
-                let output = "";
-                
-                var checkboxes = document.querySelectorAll('input[name="value"]:checked');
-                var sum = 0;
+                let sum = selectedValues.reduce((acc, val) => acc + val, 0);
+                document.getElementById('result').textContent = 'The Team Cost is: ' + sum.toFixed(1) + 'M';
+            }
 
-                checkboxes.forEach(function(checkbox) {
-                    sum += parseFloat(checkbox.value);
-                });
-
-                document.getElementById('result').textContent = 'The Team Cost is: ' + parseFloat(sum).toFixed(1) + 'M';
-            }   
-
-            document.getElementById("sumForm").addEventListener("click",calculateSum);
+            // Keeping the event listener from the original code
+            document.getElementById("sumForm").addEventListener("click", function(event) {
+                if (event.target.classList.contains("checkbox-img")) {
+                    toggleCheckbox(event.target);
+                }
+            });
         </script>
-
-
-
-
-
-
     </body>
-
-
 </html>
